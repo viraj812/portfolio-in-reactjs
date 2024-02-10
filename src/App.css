@@ -1,38 +1,193 @@
-.App {
+.mainDiv {
+  position: absolute;
+  overflow: auto;
+
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+}
+
+
+
+nav {
+  display: flex;
+  position: sticky;
+
+  padding: 1%;
+
+  width: 100vw;
+
+  /* justify-content: center; */
+  align-items: center;
+
+  background-color: black;
+  border-bottom: 1px solid rgb(27, 27, 27);
+
+  z-index: 10;
+}
+
+.titleDiv {
+  display: block;
+  position: relative;
+
+  width: 20vw;
+
+  /* margin-left: 2%; */
+
+  color: aliceblue;
+
   text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.navButtons {
+  display: flex;
+  position: relative;
+
+  width: 75vw;
+
+  justify-content: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-item {
+
+  display: flex;
+  position: relative;
+
+  width: 10%;
+
+  padding: 1%;
+  margin-right: 2px;
+
+  justify-content: center;
+
+
+  color: rgb(131, 0, 253);
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+
+  border-radius: 10px 10px 10px 10px;
+
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  animation: nav-animation 0.25s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav-animation {
+  to {
+    background-color: rgb(103, 0, 221);
+    color: black;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pageDiv {
+  display: flex;
+  position: relative;
+
+  height: 100vh;
+  width: 100vw;
+
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(rgb(11, 11, 11), rgb(12, 3, 19), rgb(33, 0, 61));
+}
+
+.contentBox {
+  position: relative;
+  display: flex;
+
+  height: 90vh;
+  width: 85vw;
+
+  background-color: black;
+  color: aliceblue;
+  font-size: larger;
+
+  border-radius: 20px;
+}
+
+.contentDiv {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  left: 55%;
+  top: 16%;
+
+  /* float: left; */
+  z-index: 10;
+
+  height: fit-content;
+  width: fit-content;
+  min-width: 30%;
+  max-width: 45%;
+
+  /* border: 2px solid yellow; */
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: 35px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img {
+  display: block;
+  position: absolute;
+
+  height: 98%;
+  width: 50%;
+
+  bottom: 1%;
+  left: 1%;
+  
+  z-index: 5;
+}
+
+.pronoun-span {
+  animation: afterDelay 3s;
+}
+
+@keyframes afterDelay {
+  0% {
+    color: black;
   }
+
+  100% {
+    color: aliceblue;
+  }
+}
+
+.name-span {
+  color: rgb(165, 68, 255);
+}
+
+.role {
+  font-size: 30px;
+  font-weight: 650;
+
+  animation: roleAnimation 4s;
+}
+
+.role-span {
+  color: rgb(255, 144, 40);
+}
+
+@keyframes roleAnimation {
+  from {
+    transform: translateY(400%);
+  }
+
   to {
-    transform: rotate(360deg);
+    transform: translateY(0%);
   }
 }
