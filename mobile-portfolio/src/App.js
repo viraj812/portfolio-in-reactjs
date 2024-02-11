@@ -1,20 +1,9 @@
 import profile from './profile_pic.png'
 import './App.css';
+import NavComponent from './components/navigationBar';
+import ContactPage from './pages/contact';
 import { useEffect, useState } from 'react';
-
-function NavComponent() {
-  return (<nav>
-    <div className='titleDiv'>Portfolio</div>
-
-    <div className='navButtons'>
-      <div className='nav-item'>Home</div>
-      <div className='nav-item'>Skills</div>
-      <div className='nav-item'>About</div>
-      <div className='nav-item'>Contact</div>
-    </div>
-  </nav>);
-}
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const TypewriterAnimation = (props) => {
   const [currentText, setCurrentText] = useState('');
@@ -35,6 +24,7 @@ const TypewriterAnimation = (props) => {
   return <span>{currentText}</span>;
 };
 
+
 const ContentBoxComponent = () => {
 
   return (
@@ -46,26 +36,40 @@ const ContentBoxComponent = () => {
         </h2>
 
         <p className='role'><span className='role-span'> Full-Stack Developer</span></p>
+
+        <input className='learnMore-btn' type='button' value='Learn More' />
       </div>
 
-      <img src={profile} alt='profile picture' />
+      <div className='img-container'>
+        <img src={profile} alt='profile picture' />
+      </div>
     </div>
   );
 }
 
-const mainPage = (
-  <div className='mainDiv'>
-
-    <NavComponent />
+const MainPage = () => {
+  return (<div className='mainDiv'>
 
     <div className='pageDiv'>
       <ContentBoxComponent />
     </div>
-  </div>
-);
+  </div>);
+};
 
 function App() {
-  return mainPage;
+  return (
+    <BrowserRouter>
+      <NavComponent />
+      <Routes>
+        <Route exact path='*' element={<MainPage/>} />
+        <Route path='/skills' element={<ContactPage/>} />
+        <Route path='/about' element={<ContactPage/>} />
+        <Route path='/contact' element={<ContactPage/>} />
+      </Routes>
+    </BrowserRouter>
+
+
+  );
 }
 
 export default App;

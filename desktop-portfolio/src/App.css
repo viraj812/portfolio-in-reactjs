@@ -44,6 +44,10 @@ nav {
 
 }
 
+.titleDiv:hover {
+  cursor: pointer;
+}
+
 
 
 .navButtons {
@@ -110,6 +114,8 @@ nav {
   height: 90vh;
   width: 85vw;
 
+  align-items: center;
+
   background-color: black;
   color: aliceblue;
   font-size: larger;
@@ -140,17 +146,38 @@ h2 {
   font-weight: 700;
 }
 
+.img-container {
+  position: relative;
+  background-color: rgb(26, 0, 111);
+
+
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  height: 90%;
+  width: 45%;
+
+  /* bottom: 1%; */
+  left: 3%;
+  /* top: 3%; */
+
+  border-radius: 60%;
+
+  box-shadow: inset 5px 2px 50px 20px rgb(99, 38, 254);
+
+  z-index: 5;
+}
+
 img {
   display: block;
   position: absolute;
 
-  height: 98%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 
-  bottom: 1%;
-  left: 1%;
   
-  z-index: 5;
+  
+  /* z-index: 5; */
 }
 
 .pronoun-span {
@@ -190,4 +217,33 @@ img {
   to {
     transform: translateY(0%);
   }
+}
+
+.learnMore-btn {
+  width: fit-content;
+
+  padding: 10px;
+
+  align-self: center;
+
+  font-size: large;
+  font-weight: 600;
+
+  border-radius: 15px;
+
+  animation: fade 10s;
+}
+
+@keyframes fade {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: aliceblue;
+  }
+}
+
+.learnMore-btn:hover {
+  background-color: orange;
+  cursor: pointer;
 }
