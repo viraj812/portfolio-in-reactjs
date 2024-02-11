@@ -3,7 +3,7 @@ import './App.css';
 import NavComponent from './components/navigationBar';
 import ContactPage from './pages/contact';
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const TypewriterAnimation = (props) => {
   const [currentText, setCurrentText] = useState('');
@@ -57,14 +57,18 @@ const MainPage = () => {
 };
 
 function App() {
+
   return (
     <BrowserRouter>
       <NavComponent />
+
+    
+
       <Routes>
-        <Route exact path='*' element={<MainPage/>} />
-        <Route path='/skills' element={<ContactPage/>} />
-        <Route path='/about' element={<ContactPage/>} />
-        <Route path='/contact' element={<ContactPage/>} />
+        <Route exact path='*' element={<MainPage />} />
+        <Route path='/skills' element={<ContactPage />} />
+        <Route path='/about' element={<ContactPage />} />
+        <Route path='/contact' element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
 
