@@ -9,7 +9,7 @@ app.use(express.static('client'));
 
 app.get('*', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
-        return res.sendFile(__dirname, 'client', 'desktop-build', 'index.html');
+        return res.sendFile(path(__dirname, 'client', 'desktop-build', 'index.html'));
     }
     else {
         return res.sendFile(__dirname, 'client', 'mobile-build', 'index.html');
