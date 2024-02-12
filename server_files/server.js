@@ -8,10 +8,10 @@ app.use(express.static('client/'));
 
 app.get('*', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
-        return res.sendFile('/desktop-build');
+        return res.sendFile('/desktop-build/index.html');
     }
     else {
-        return res.sendFile('/mobile-build');
+        return res.sendFile('/mobile-build/index.html');
     }
 })
 

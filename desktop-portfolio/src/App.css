@@ -116,6 +116,8 @@ nav {
 
   align-items: center;
 
+  overflow: hidden;
+
   background-color: black;
   color: aliceblue;
   font-size: larger;
