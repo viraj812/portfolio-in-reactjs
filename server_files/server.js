@@ -10,7 +10,7 @@ app.use(express.static('client'));
 
 app.get('*', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
-        return res.render('desktop-build/index.html');
+        return res.render('./client/desktop-build/index.html');
     }
     else {
         return res.sendFile(path.resolve(__dirname, 'client', 'mobile-build', 'index.html'));
