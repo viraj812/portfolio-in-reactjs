@@ -5,8 +5,8 @@ const app = new express();
 app.use(express.json());
 
 app.use(express.static('client'));
-app.use(express.static('client/mobile-build'));
-app.use(express.static('client/desktop-build'));
+// app.use(express.static('client/mobile-build'));
+// app.use(express.static('client/desktop-build'));
 
 app.get('*', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
