@@ -4,14 +4,14 @@ const path = require('path');
 const app = new express();
 app.use(express.json());
 
-app.use(express.static('/client'));
+app.use(express.static('client/'));
 
 app.get('*', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
-        return res.sendFile('/client/desktop-build');
+        return res.sendFile('/desktop-build');
     }
     else {
-        return res.sendFile('/client/mobile-build');
+        return res.sendFile('/mobile-build');
     }
 })
 
