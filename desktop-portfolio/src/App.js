@@ -2,6 +2,7 @@ import profile from './profile_pic.png'
 import './App.css';
 import NavComponent from './components/navigationBar';
 import ContactPage from './pages/contact';
+import SkillPage from './pages/skill';
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -66,7 +67,7 @@ function App() {
 
       <Routes>
         <Route exact path='*' element={<MainPage />} />
-        <Route path='/skills' element={<ContactPage />} />
+        <Route path='/skills' element={<SkillPage />} />
         <Route path='/about' element={<ContactPage />} />
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
