@@ -2,19 +2,24 @@ const express = require('express');
 const path = require('path');
 
 const app = new express();
-app.use(express.json());
+const { static } = require('express');
+// app.use(express.json());
 
-app.use(express.static('client/mobile-build'));
-app.use(express.static('client/desktop-build'));
+app.use(static('client/desktop-build'));
+app.use(static('client/mobile-build'));
 
-app.get('*', (req, res) => {
+console.clear();
+
+app.get('/', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
-        return res.sendFile(path.resolve(__dirname, 'client', 'mobile-build', 'index.html'));
+        res.sendFile('client/mobile-build/mobile.html', {root: __dirname})
     }
     else {
-        return res.sendFile(path.resolve(__dirname, 'client', 'desktop-build', 'index.html'));
+        res.sendFile('client/desktop-build/desktop.html', {root: __dirname})
     }
+
 })
+
 
 
 app.listen(4048, () => {
