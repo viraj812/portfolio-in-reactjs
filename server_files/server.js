@@ -10,7 +10,7 @@ app.use(static('client/mobile-build'));
 
 console.clear();
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     if (req.header('user-agent').indexOf('Mobile') != -1) {
         res.sendFile('client/mobile-build/mobile.html', {root: __dirname})
     }
