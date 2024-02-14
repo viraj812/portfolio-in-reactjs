@@ -20,7 +20,7 @@ const NavComponent = () => {
                 </div> */}
 
                 <div className="navButtons">
-                    <div className='nav-item' onClick={() => handleClick('/home')}>Home</div>
+                    <div className='nav-item' onClick={() => handleClick('/')}>Home</div>
 
                     <div className='nav-item' onClick={() => handleClick('/skills')}>Skills</div>
 

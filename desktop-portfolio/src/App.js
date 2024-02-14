@@ -40,8 +40,10 @@ const ContentBoxComponent = () => {
         <input className='learnMore-btn' type='button' value='Learn More' />
       </div>
 
-      <div className='img-container'>
-        <img src={profile} alt='profile picture' />
+      <div className='img-div'>
+        <div className='img-container'>
+          <img src={profile} alt='profile picture' />
+        </div>
       </div>
     </div>
   );
