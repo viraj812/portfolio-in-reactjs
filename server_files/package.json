@@ -17,6 +17,6 @@
   "devDependencies": {},
   "description": "",
   "engines": {
-    "node": ">=21.4.0"
+    "node": "21.4.0"
   }
 }
