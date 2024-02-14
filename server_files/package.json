@@ -4,8 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "npm install"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,9 +14,5 @@
     "path": "^0.12.7"
   },
   "devDependencies": {},
-  "description": "",
-
-  "engines": {
-    "node": "21.4.0"
-  }
+  "description": ""
 }
