@@ -16,5 +16,8 @@
   },
   "homepage": "./",
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": ">=21.4.0"
+  }
 }
