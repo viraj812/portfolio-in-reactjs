@@ -8,9 +8,8 @@
   margin: 0;
 }
 
-.nav-div {
-  position: relative;
-  /* top: 0; */
+.mainDiv::-webkit-scrollbar {
+  display: none;
 }
 
 nav {
@@ -20,6 +19,7 @@ nav {
   padding: 1%;
 
   width: 100vw;
+  height: 5vh;
 
   align-items: center;
 
@@ -110,7 +110,6 @@ nav {
 
   background-image: linear-gradient(rgb(11, 11, 11), rgb(12, 3, 19), rgb(33, 0, 61));
 
-  overflow: hidden;
 }
 
 
@@ -118,7 +117,6 @@ nav {
   position: relative;
   display: flex;
 
-  flex-wrap: nowrap;
   flex: 1;
 
   flex-direction: column;
@@ -130,10 +128,12 @@ nav {
   height: fit-content;
   width: 100vw;
 
-  /* top: 10vh; */
+  top: 25vh;
 
-  background-color: tomato;
-
+  background-color: rgb(10, 10, 10);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  box-shadow: 0px -8px 20px 2px rgb(88, 88, 88);
 }
 
 .skill-title {
@@ -144,8 +144,11 @@ h4{
   position: relative;
 
   margin-top: 3%;
-  margin-left: 15%;
-  font-size: x-large;
+  margin-left: 10%;
+
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: aliceblue;
 }
 
 .skills {
@@ -167,6 +170,7 @@ h4{
   background-color: blue;
 
   overflow-wrap: break-word;
+  border-radius: 6px;
 }
 
 .skill-element {
@@ -174,7 +178,7 @@ h4{
   display: flex;
 
   width: 80%;
-  height: 30%;
+  height: 35%;
 
   margin: 3%;
 
@@ -186,7 +190,8 @@ h4{
 
   color: azure;
 
-  border-radius: 20px;
+  border-radius: 25px 0;
 
   background-color: black;
+  border: 1px solid white;
 }

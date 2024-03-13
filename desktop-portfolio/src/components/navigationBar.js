@@ -1,15 +1,12 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NavComponent = () => {
 
-    const [display, setDisplay] = useState("none");
-
+    const navigate = useNavigate();
 
     const handleClick = (url) => {
         navigate(url);
     }
-    const navigate = useNavigate();
 
     return (
           
