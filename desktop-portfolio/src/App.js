@@ -1,66 +1,56 @@
-import profile from './profile_pic.png'
 import './App.css';
+import './components/content.css';
 import NavComponent from './components/navigationBar';
 import ContactPage from './pages/contact';
-import { useEffect, useState } from 'react';
+import ContentBoxComponent from './components/content';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-const TypewriterAnimation = (props) => {
-  const [currentText, setCurrentText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-
-  useEffect(() => {
-    if (currentIndex < props.text.length) {
-      let txtArray = Array.from(props.text);
-      setTimeout(() => {
-        setCurrentText(currentText + txtArray[currentIndex]);
-        setCurrentIndex(currentIndex + 1);
-      }, props.delay)
-    }
-  }, [currentText]);
-
-
-  return <span>{currentText}</span>;
-};
-
-
-const ContentBoxComponent = () => {
-
+const SkillElement = (props) => {
   return (
-    <div className='contentBox'>
-      <div className='contentDiv'>
-        <h2><span className='pronoun-span'>Hi There, <br />
-          I'm </span>
-          <span className='name-span'><TypewriterAnimation text="VIRAJ DESAI" delay={100} /></span>
-        </h2>
 
-        <p className='role'><span className='role-span'> Full-Stack Developer</span></p>
+    <div className='skill-element'>
+      {props.skill}
+    </div>
 
-        <input className='learnMore-btn' type='button' value='Learn More' />
+  )
+}
+
+const SkillsPage = () => {
+  return (
+    <div className='skillDiv'>
+      <div className='skill-title'>
+        <h4>Skills</h4>
       </div>
-
-      <div className='img-container'>
-        <img src={profile} alt='profile picture' />
+      <div className='skills'>
+        <SkillElement skill='Frontend Development' />
+        <SkillElement skill='Backend Development' />
+        <SkillElement skill='Android App Development' />
+        <SkillElement skill='Machine Learning' />
+        <SkillElement skill='Deep Learning' />
+        <SkillElement skill='Artificial Intelligence' />
       </div>
     </div>
-  );
+  )
 }
 
 const MainPage = () => {
-  return (<div className='mainDiv'>
-
-    <div className='pageDiv'>
-      <ContentBoxComponent />
-    </div>
-  </div>);
+  return (
+    <div className='mainDiv'>
+      <div className='pageDiv'>
+        <ContentBoxComponent />
+        <SkillsPage />
+      </div>
+    </div>);
 };
 
 function App() {
 
   return (
     <BrowserRouter>
-      <NavComponent />
+      <div className="nav-div">
+        <NavComponent />
+      </div>
 
       <Routes>
         <Route exact path='*' element={<MainPage />} />

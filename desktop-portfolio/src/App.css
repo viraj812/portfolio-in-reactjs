@@ -1,24 +1,26 @@
 .mainDiv {
   position: absolute;
-  overflow: auto;
-
+  overflow-y: auto;
+  
   height: 100vh;
   width: 100vw;
 
   margin: 0;
 }
 
-
+.nav-div {
+  position: relative;
+  /* top: 0; */
+}
 
 nav {
   display: flex;
-  position: sticky;
+  position: relative;
 
   padding: 1%;
 
   width: 100vw;
 
-  /* justify-content: center; */
   align-items: center;
 
   background-color: black;
@@ -47,8 +49,6 @@ nav {
 .titleDiv:hover {
   cursor: pointer;
 }
-
-
 
 .navButtons {
   display: flex;
@@ -98,152 +98,95 @@ nav {
   display: flex;
   position: relative;
 
-  height: 100vh;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  height: fit-content;
   width: 100vw;
 
   justify-content: center;
   align-items: center;
 
   background-image: linear-gradient(rgb(11, 11, 11), rgb(12, 3, 19), rgb(33, 0, 61));
+
+  overflow: hidden;
 }
 
-.contentBox {
+
+.skillDiv {
   position: relative;
   display: flex;
 
-  height: 90vh;
-  width: 85vw;
+  flex-wrap: nowrap;
+  flex: 1;
+
+  flex-direction: column;
 
   align-items: center;
 
-  background-color: black;
-  color: aliceblue;
-  font-size: larger;
-
-  border-radius: 20px;
-}
-
-.contentDiv {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 55%;
-  top: 16%;
-
-  /* float: left; */
-  z-index: 10;
+  min-height: 100vh;
 
   height: fit-content;
-  width: fit-content;
-  min-width: 30%;
-  max-width: 45%;
+  width: 100vw;
 
-  /* border: 2px solid yellow; */
+  /* top: 10vh; */
+
+  background-color: tomato;
+
 }
 
-h2 {
-  font-size: 35px;
-  font-weight: 700;
-}
-
-.img-container {
-  position: relative;
-  background-color: rgb(26, 0, 111);
-
-
-  overflow-x: hidden;
-  overflow-y: visible;
-
-  height: 90%;
-  width: 45%;
-
-  /* bottom: 1%; */
-  left: 3%;
-  /* top: 3%; */
-
-  border-radius: 60%;
-
-  box-shadow: inset 5px 2px 50px 20px rgb(99, 38, 254);
-
-  z-index: 5;
-}
-
-img {
-  display: block;
-  position: absolute;
-
-  height: 100%;
+.skill-title {
   width: 100%;
-
-  
-  
-  /* z-index: 5; */
 }
 
-.pronoun-span {
-  animation: afterDelay 3s;
+h4{
+  position: relative;
+
+  margin-top: 3%;
+  margin-left: 15%;
+  font-size: x-large;
 }
 
-@keyframes afterDelay {
-  0% {
-    color: black;
-  }
+.skills {
+  position: relative;
+  display: grid;
 
-  100% {
-    color: aliceblue;
-  }
+
+  grid-row-start: 20px;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  grid-template-columns: 50% 50%;
+
+  flex: 1;
+  width: 90%;
+  height: 90%;
+
+  /* bottom: 0; */
+
+  /* z-index: 10; */
+  background-color: blue;
+
+  overflow-wrap: break-word;
 }
 
-.name-span {
-  color: rgb(165, 68, 255);
-}
+.skill-element {
 
-.role {
-  font-size: 30px;
-  font-weight: 650;
+  display: flex;
 
-  animation: roleAnimation 4s;
-}
+  width: 80%;
+  height: 30%;
 
-.role-span {
-  color: rgb(255, 144, 40);
-}
-
-@keyframes roleAnimation {
-  from {
-    transform: translateY(400%);
-  }
-
-  to {
-    transform: translateY(0%);
-  }
-}
-
-.learnMore-btn {
-  width: fit-content;
-
-  padding: 10px;
+  margin: 3%;
 
   align-self: center;
+  justify-self: center;
 
-  font-size: large;
-  font-weight: 600;
+  align-items: center;
+  justify-content: center;
 
-  border-radius: 15px;
+  color: azure;
 
-  animation: fade 10s;
-}
+  border-radius: 20px;
 
-@keyframes fade {
-  from {
-    background-color: black;
-  }
-  to {
-    background-color: aliceblue;
-  }
-}
-
-.learnMore-btn:hover {
-  background-color: orange;
-  cursor: pointer;
+  background-color: black;
 }

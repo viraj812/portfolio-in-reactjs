@@ -12,12 +12,9 @@ const NavComponent = () => {
     const navigate = useNavigate();
 
     return (
+          
         <nav>
-            {/* <div className="nav-div"> */}
                 <div className='titleDiv'>Portfolio</div>
-
-                {/* <div className='navButtons'>
-                </div> */}
 
                 <div className="navButtons">
                     <div className='nav-item' onClick={() => handleClick('/home')}>Home</div>
@@ -29,7 +26,6 @@ const NavComponent = () => {
                     <div className='nav-item' onClick={() => handleClick('/contact')}>Contact</div>
 
                 </div>
-            {/* </div> */}
         </nav>
     );
 }
