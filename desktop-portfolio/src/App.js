@@ -1,34 +1,19 @@
 import './App.css';
-import './components/content.css';
+import './pages/css/content.css';
+import './pages/css/skill.css'
+import SkillsPage from './pages/skill';
 import NavComponent from './components/navigationBar';
 import ContactPage from './pages/contact';
-import ContentBoxComponent from './components/content';
+import ContentBoxComponent from './pages/content';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-const SkillElement = (props) => {
+
+const AboutPage = () => {
   return (
-
-    <div className='skill-element'>
-      {props.skill}
-    </div>
-
-  )
-}
-
-const SkillsPage = () => {
-  return (
-    <div className='skillDiv'>
-      <div className='skill-title'>
-        <h4>Skills</h4>
-      </div>
-      <div className='skills'>
-        <SkillElement skill='Frontend Development' />
-        <SkillElement skill='Backend Development' />
-        <SkillElement skill='Android App Development' />
-        <SkillElement skill='Machine Learning' />
-        <SkillElement skill='Deep Learning' />
-        <SkillElement skill='Artificial Intelligence' />
+    <div className='aboutDiv'>
+      <div className='about-title'>
+        About Me
       </div>
     </div>
   )
@@ -40,6 +25,7 @@ const MainPage = () => {
       <div className='pageDiv'>
         {/* <ContentBoxComponent /> */}
         <SkillsPage />
+        <AboutPage />
       </div>
     </div>);
 };
