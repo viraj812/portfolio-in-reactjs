@@ -23,7 +23,7 @@ const MainPage = () => {
   return (
     <div className='mainDiv'>
       <div className='pageDiv'>
-        {/* <ContentBoxComponent /> */}
+        <ContentBoxComponent />
         <SkillsPage />
         <AboutPage />
       </div>

@@ -108,6 +108,7 @@ nav {
   justify-content: center;
   align-items: center;
 
-  background-image: linear-gradient(rgb(11, 11, 11), rgb(12, 3, 19), rgb(33, 0, 61));
+  /* background-image: linear-gradient(rgb(11, 11, 11), rgb(22, 1, 37), rgb(51, 0, 95)); */
+  background-image: url('./pages/bg-img.jpg');
 
 }

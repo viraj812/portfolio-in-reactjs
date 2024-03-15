@@ -1,7 +1,7 @@
+import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NavComponent = () => {
-
     const navigate = useNavigate();
 
     const handleClick = (url) => {
@@ -16,7 +16,7 @@ const NavComponent = () => {
                 <div className="navButtons">
                     <div className='nav-item' onClick={() => handleClick('/home')}>Home</div>
 
-                    <div className='nav-item' onClick={() => handleClick('/skills')}>Skills</div>
+                    <div className='nav-item' onClick={() => handleClick('.skillDiv')}>Skills</div>
 
                     <div className='nav-item' onClick={() => handleClick('/about')}>About</div>
 
