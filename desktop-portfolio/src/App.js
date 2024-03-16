@@ -7,39 +7,25 @@ import AboutPage from './components/about';
 import NavComponent from './components/navigationBar';
 import ContactPage from './components/contact';
 import ContentBoxComponent from './components/content';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { forwardRef, useRef } from 'react';
-import { useEffect } from 'react';
 
-
-
-
-const MainPage = (props) => {
+const MainPage = () => {
   return (
     <div className='mainDiv'>
+      <div className='nav-div'>
+        <NavComponent />
+      </div>
       <div className='pageDiv'>
-        <ContentBoxComponent ref={props.home} />
-        <SkillsPage ref={props.skill} />
-        <AboutPage ref={props.about} />
+        <ContentBoxComponent />
+        <SkillsPage />
+        <AboutPage />
       </div>
     </div>);
 };
 
 function App() {
-  const home = forwardRef();
-  const skill = forwardRef();
-  const about = forwardRef();
-
-  useEffect(() => {
-    console.log(home.current, skill.current, about.current);
-  }, []);
 
   return (
-      <div className="nav-div">
-        <NavComponent home={home} skill={skill} about={about} />
-        <MainPage home={home} skill={skill} about={about}/>
-      </div>
-
+    <MainPage />
   );
 }
 

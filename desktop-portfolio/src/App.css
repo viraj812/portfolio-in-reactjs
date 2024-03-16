@@ -1,15 +1,25 @@
 .mainDiv {
   position: absolute;
-  overflow-y: auto;
+  overflow-y: scroll;
 
   height: 100vh;
   width: 100vw;
-  background-color: chartreuse;
+
   margin: 0;
+  /* margin-top: 10vh; */
 }
 
 .mainDiv::-webkit-scrollbar {
   display: none;
+}
+
+.nav-div {
+  /* position: fixed; */
+  height: 8vh;
+  width: 100vw;
+  top: 0;
+  z-index: 100;
+  background-color: aliceblue;
 }
 
 nav {
@@ -111,9 +121,11 @@ nav {
   /* background-image: linear-gradient(rgb(11, 11, 11), rgb(22, 1, 37), rgb(51, 0, 95)); */
   background-image: url('./components/new-bg.jpg');
   background-size: contain;
-  /* background-repeat: repeat; */
 
+/* 
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll; */
+
+  overflow: hidden;
 
 }

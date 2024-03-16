@@ -9,7 +9,7 @@ const ServicesElement = (props) => {
                 <img src={props.src} />
             </div>
 
-            <div className='skill-title'>
+            <div className='services-title'>
                 {props.skill}
             </div>
 
@@ -41,12 +41,12 @@ const TechnologiesElement = (props) => {
     )
 }
 
-const SkillsPage = (props) => {
+const SkillsPage = () => {
 
     return (
         <div className='skillDiv' id="scroll2">
             <div className='skill-title' >
-                <h4>Skills</h4>
+                Skills
             </div>
 
             <div className='skill-services'>
@@ -55,11 +55,11 @@ const SkillsPage = (props) => {
                 </div>
                 <div className="services-container">
                     <ServicesElement skill='Frontend Development' src={logo1} />
+                    <ServicesElement skill='Data Science' />
                     <ServicesElement skill='Backend Development' src={logo2} />
+                    <ServicesElement skill='Artificial Intelligence' />
                     <ServicesElement skill='Android App Development' />
                     <ServicesElement skill='Machine Learning' />
-                    <ServicesElement skill='Deep Learning' />
-                    <ServicesElement skill='Artificial Intelligence' />
                 </div>
             </div>
 
@@ -69,43 +69,10 @@ const SkillsPage = (props) => {
                 </div>
 
                 <div className="technologies-container">
-                    {/* <ul style={{ color: "white" }}>
-                        <li>
-                            Web Technologies
-                            <ul>
-                                <li>ReactJS</li>
-                                <li>NodeJS</li>
-                                <li>ExpressJS</li>
-                                <li>Flask</li>
-                                <li>Django</li>
-                            </ul>
-                        </li>
-
-                        <br />
-
-                        <li>
-                            Android Technologies
-                            <ul>
-                                <li>Android Studio</li>
-                            </ul>
-                        </li>
-
-                        <br />
-
-                        <li>
-                            Artificial Intelligence and Machine Learning Technologies
-                            <ul>
-                                <li>Tensorflow</li>
-                                <li>Pytorch</li>
-                                <li>OpenCV</li>
-                                <li>Scikit-learn</li>
-                            </ul>
-                        </li>
-                    </ul> */}
 
                     <TechnologiesElement title="Web Technology" content={['ReactJS', 'NodeJS', 'ExpressJS', 'Flask', 'Django']} />
                     <TechnologiesElement title="Android Technology" content={['Android Studio', 'Kotlin', 'XML']} />
-                    <TechnologiesElement title="Artificial Intelligence and Machine Learning Technology" content={['Tensorflow', 'Pytorch', 'OpenCV', 'Scikit-learn']} />
+                    <TechnologiesElement title="AI/ML Technology" content={['Tensorflow', 'Pytorch', 'OpenCV', 'Scikit-learn']} />
                 </div>
             </div>
         </div>
