@@ -2,10 +2,10 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NavComponent = (props) => {
-    const ref = useRef(null);
+
 
     const handleClick = (url) => {
-        window.scrollTo(url);
+        document.getElementById(url).scrollIntoView({behavior: "smooth"});
     }
 
     return (
@@ -16,9 +16,9 @@ const NavComponent = (props) => {
             <div className="navButtons">
                 <div className='nav-item'>Home</div>
 
-                <div className='nav-item' onClick={() => props.ref.current?.scrollToView()}>Skills</div>
+                <div className='nav-item' onClick={() => handleClick('scroll2')}>Skills</div>
 
-                <div className='nav-item' onClick={() => handleClick('/about')}>About</div>
+                <div className='nav-item' onClick={() => handleClick('scroll3')}>About</div>
 
                 <div className='nav-item' onClick={() => handleClick('/contact')}>Contact</div>
 

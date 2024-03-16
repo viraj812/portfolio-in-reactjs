@@ -1,8 +1,8 @@
 import profile_pic from "../profile_pic.png"
 
-const AboutPage = () => {
+const AboutPage = (props) => {
     return (
-        <div className='aboutDiv'>
+        <div className='aboutDiv' id="scroll3">
             <div className='about-title'>
                 About Me
             </div>

@@ -8,7 +8,8 @@ import NavComponent from './components/navigationBar';
 import ContactPage from './components/contact';
 import ContentBoxComponent from './components/content';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useRef } from 'react';
+import { forwardRef, useRef } from 'react';
+import { useEffect } from 'react';
 
 
 
@@ -25,9 +26,13 @@ const MainPage = (props) => {
 };
 
 function App() {
-  const home = useRef(null);
-  const skill = useRef(null);
-  const about = useRef(null);
+  const home = forwardRef();
+  const skill = forwardRef();
+  const about = forwardRef();
+
+  useEffect(() => {
+    console.log(home.current, skill.current, about.current);
+  }, []);
 
   return (
       <div className="nav-div">

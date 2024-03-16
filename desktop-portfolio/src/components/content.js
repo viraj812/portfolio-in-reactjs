@@ -37,7 +37,7 @@ const TypewriterAnimation = (props) => {
         </div>
   
         <div className='img-container'>
-          <img src={profile} alt='profile picture' />
+          {/* <img src={profile} alt='profile picture' /> */}
         </div>
       </div>
     );

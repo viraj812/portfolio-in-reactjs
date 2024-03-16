@@ -42,9 +42,10 @@ const TechnologiesElement = (props) => {
 }
 
 const SkillsPage = (props) => {
+
     return (
-        <div className='skillDiv'>
-            <div className='skill-title' ref={props.ref}>
+        <div className='skillDiv' id="scroll2">
+            <div className='skill-title' >
                 <h4>Skills</h4>
             </div>
 
