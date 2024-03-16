@@ -1,51 +1,39 @@
 import './App.css';
-import './pages/css/content.css';
-import './pages/css/skill.css'
-import SkillsPage from './pages/skill';
+import './components/css/content.css';
+import './components/css/skill.css';
+import './components/css/about.css';
+import SkillsPage from './components/skill';
+import AboutPage from './components/about';
 import NavComponent from './components/navigationBar';
-import ContactPage from './pages/contact';
-import ContentBoxComponent from './pages/content';
+import ContactPage from './components/contact';
+import ContentBoxComponent from './components/content';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useRef } from 'react';
 
 
 
-const AboutPage = () => {
-  return (
-    <div className='aboutDiv'>
-      <div className='about-title'>
-        About Me
-      </div>
-    </div>
-  )
-}
 
-const MainPage = () => {
+const MainPage = (props) => {
   return (
     <div className='mainDiv'>
       <div className='pageDiv'>
-        <ContentBoxComponent />
-        <SkillsPage />
-        <AboutPage />
+        <ContentBoxComponent ref={props.home} />
+        <SkillsPage ref={props.skill} />
+        <AboutPage ref={props.about} />
       </div>
     </div>);
 };
 
 function App() {
+  const home = useRef(null);
+  const skill = useRef(null);
+  const about = useRef(null);
 
   return (
-    <BrowserRouter>
       <div className="nav-div">
-        <NavComponent />
+        <NavComponent home={home} skill={skill} about={about} />
+        <MainPage home={home} skill={skill} about={about}/>
       </div>
-
-      <Routes>
-        <Route exact path='*' element={<MainPage />} />
-        <Route path='/skills' element={<ContactPage />} />
-        <Route path='/about' element={<ContactPage />} />
-        <Route path='/contact' element={<ContactPage />} />
-      </Routes>
-    </BrowserRouter>
-
 
   );
 }
