@@ -20,7 +20,7 @@ const NavComponent = (props) => {
 
                 <div className='nav-item' onClick={() => handleClick('scroll3')}>About</div>
 
-                <div className='nav-item' onClick={() => handleClick('/contact')}>Contact</div>
+                <div className='nav-item' onClick={() => handleClick('scroll4')}>Contact</div>
 
             </div>
         </nav>

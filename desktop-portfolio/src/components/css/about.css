@@ -2,7 +2,7 @@
 .aboutDiv {
 
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     /* height: fit-content; */
   
     /* margin-top: 5%; */
@@ -47,12 +47,14 @@
   
   .about1-img {
     position: relative;
-    width: 30%;
+    width: 40%;
     height: 100%;
   }
   .about1-img > img {
     position: relative;
-    height: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
     /* border: 1px solid white; */
   }
   

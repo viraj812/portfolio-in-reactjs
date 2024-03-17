@@ -2,6 +2,7 @@ import './App.css';
 import './components/css/content.css';
 import './components/css/skill.css';
 import './components/css/about.css';
+import './components/css/contact.css';
 import SkillsPage from './components/skill';
 import AboutPage from './components/about';
 import NavComponent from './components/navigationBar';
@@ -18,6 +19,9 @@ const MainPage = () => {
         <ContentBoxComponent />
         <SkillsPage />
         <AboutPage />
+      <footer>
+        <ContactPage />
+      </footer>
       </div>
     </div>);
 };

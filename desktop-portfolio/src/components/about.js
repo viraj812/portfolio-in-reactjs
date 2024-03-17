@@ -1,4 +1,4 @@
-import profile_pic from "../profile_pic.png"
+import profile_pic from "../vj.png"
 
 const AboutPage = (props) => {
     return (
