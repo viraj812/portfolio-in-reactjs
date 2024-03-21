@@ -1,5 +1,9 @@
 import logo1 from "./logo1.png";
 import logo2 from "./logo2.png";
+import logo3 from "./logo3.png";
+import logo4 from "./logo4.png";
+import logo5 from "./logo5.png";
+import logo6 from "./logo6.png";
 
 const ServicesElement = (props) => {
     return (
@@ -55,11 +59,11 @@ const SkillsPage = () => {
                 </div>
                 <div className="services-container">
                     <ServicesElement skill='Frontend Development' src={logo1} />
-                    <ServicesElement skill='Data Science' />
-                    <ServicesElement skill='Backend Development' src={logo2} />
-                    <ServicesElement skill='Artificial Intelligence' />
-                    <ServicesElement skill='Android App Development' />
-                    <ServicesElement skill='Machine Learning' />
+                    <ServicesElement skill='Data Science' src={logo2} />
+                    <ServicesElement skill='Backend Development' src={logo3} />
+                    <ServicesElement skill='Artificial Intelligence' src={logo4} />
+                    <ServicesElement skill='Android App Development' src={logo5} />
+                    <ServicesElement skill='Machine Learning' src={logo6} />
                 </div>
             </div>
 
