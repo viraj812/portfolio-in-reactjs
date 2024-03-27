@@ -33,7 +33,7 @@ const TypewriterAnimation = (props) => {
   
           <p className='role'><span className='role-span'> Full-Stack Developer</span></p>
   
-          <input className='learnMore-btn' type='button' value='Learn More' />
+          <a href={require('../cv.pdf')} download="VIRAJ_CV"><input className='learnMore-btn' type='button' value='Download Resume' /></a>
         </div>
   
         <div className='img-container'>
