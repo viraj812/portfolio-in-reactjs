@@ -118,15 +118,14 @@ nav {
   justify-content: center;
   align-items: center;
 
-  /* background-image: linear-gradient(rgb(11, 11, 11), rgb(22, 1, 37), rgb(51, 0, 95)); */
-  /* background-image: url('./components/new-bg.jpg'); */
   background-color: black;
   background-size: contain;
 
-/* 
-  overflow-x: hidden;
-  overflow-y: scroll; */
+  /* overflow-y: scroll; */
+  overflow: -moz-hidden-unscrollable;
 
-  overflow: hidden;
+}
 
+.pageDiv::-webkit-scrollbar {
+  display: none;
 }

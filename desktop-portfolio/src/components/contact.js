@@ -24,7 +24,7 @@ const ContactPage = () => {
                 <div className="social-container">
                     <p>Phone: <a href='tel:+918000739370'>+91 8000739370</a></p>
                     <p>Email: <a href='mailto:tovirajdesai@gmail.com'>tovirajdesai@gmail.com</a></p>
-                    <p>LinkedIn: </p>
+                    <p>LinkedIn: <a href='https://www.linkedin.com/in/viraj-desai-a80657254'>https://www.linkedin.com/in/viraj-desai-a80657254</a></p>
                 </div>
             </div>
             <div className="contact2">
