@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# View hosted Portfolio Website
+
+Portfolio: https://portfolio-in-reactjs.vercel.app/
+
+# This is my Personal Portfolio website completely developed using Reactjs.
+>>>>>>> 37c376899075a24c6c4a5e3d99c62540846a436f
