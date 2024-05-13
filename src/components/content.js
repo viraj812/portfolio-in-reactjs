@@ -31,7 +31,7 @@ const TypewriterAnimation = (props) => {
             <span className='name-span'><TypewriterAnimation text="VIRAJ DESAI" delay={100} /></span>
           </h2>
   
-          <p className='role'><span className='role-span'> Full-Stack Developer</span></p>
+          <p className='role'><span className='role-span'>Computer Science Engineer</span></p>
   
           <a href={require('../cv.pdf')} download="VIRAJ_CV"><input className='learnMore-btn' type='button' value='Download Resume' /></a>
         </div>

@@ -1,5 +1,5 @@
 .mainDiv {
-  position: absolute;
+  position: relative;
   overflow-y: scroll;
 
   height: 100vh;
@@ -14,7 +14,7 @@
 }
 
 .nav-div {
-  /* position: fixed; */
+  position: relative;
   height: fit-content;
   width: 100vw;
   top: 0;
@@ -112,7 +112,7 @@ nav {
 
   min-height: 100vh;
 
-  height: fit-content;
+  height: max-content;
   width: 100vw;
 
   justify-content: center;
@@ -121,7 +121,6 @@ nav {
   background-color: black;
   background-size: contain;
 
-  /* overflow-y: scroll; */
   overflow: -moz-hidden-unscrollable;
 
 }

@@ -26,7 +26,6 @@
     left: 55%;
     top: 16%;
   
-    /* float: left; */
     z-index: 10;
   
     height: fit-content;
@@ -34,7 +33,6 @@
     min-width: 30%;
     max-width: 45%;
   
-    /* border: 2px solid yellow; */
   }
   
   h2 {
@@ -53,9 +51,7 @@
     height: 90%;
     width: 45%;
   
-    /* bottom: 1%; */
     left: 3%;
-    /* top: 3%; */
   
     border-radius: 60%;
   
