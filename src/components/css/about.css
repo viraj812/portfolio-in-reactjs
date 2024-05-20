@@ -1,9 +1,8 @@
 .aboutDiv {
-
   width: 100vw;
   height: 90vh;
 
-  background-color: rgb(0, 9, 27, 0.8);
+  background-color: rgba(7, 7, 7);
 }
 
 .about-title {
