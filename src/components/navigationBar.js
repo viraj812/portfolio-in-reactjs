@@ -18,6 +18,8 @@ const NavComponent = (props) => {
 
                 <div className='nav-item' onClick={() => handleClick('scroll2')}>Skills</div>
 
+                <div className='nav-item' onClick={() => handleClick('projects')}>Projects</div>
+
                 <div className='nav-item' onClick={() => handleClick('scroll3')}>About</div>
 
                 <div className='nav-item' onClick={() => handleClick('scroll4')}>Contact</div>
