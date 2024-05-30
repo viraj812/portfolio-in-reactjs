@@ -128,3 +128,19 @@ nav {
 .pageDiv::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 480px) {
+  .titleDiv {
+    width: 15vw;
+    font-size: medium;
+  }
+  .navButtons {
+    width: 85vw;
+    margin-right: 2%;
+  }
+  .nav-item {
+    width: 10%;
+    font-size: xx-small;
+    margin-right: 2%;
+  }
+}

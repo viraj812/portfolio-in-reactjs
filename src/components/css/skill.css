@@ -45,12 +45,12 @@
 }
 
 .skill-title2 {
-    position: relative;
     border-bottom: 1px solid rgb(88, 88, 88);
     width: 100%;
 }
 
 .skill-title3 {
+    width: 100%;
     border-bottom: 1px solid gray;
 }
 
@@ -76,12 +76,11 @@ h3 {
     position: relative;
 
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     min-height: 70vh;
     width: 90vw;
-    height: fit-content;
+    height: 90vh;
 
     background-color: rgba(0, 0, 0, 0.85);
     /* border: 1px solid gray; */
@@ -95,13 +94,13 @@ h3 {
     gap: 15% 10%;
 
     width: 80%;
-    height: 50vh;
+    height: 55%;
 
     align-content: space-between;
     justify-content: space-between;
 
     padding-top: 3%;
-    padding-bottom: 12%;
+    padding-bottom: 4%;
 
     grid-template-rows: 33.33% 33.33% 33.33%;
     grid-template-columns: 50% 50%;
@@ -125,7 +124,7 @@ h3 {
     color: azure;
 
     background-color: black;
-    box-shadow: 0 0 15px 1px rgb(81, 0, 128);
+    box-shadow: 0 0 15px 1px rgb(170, 170, 170);
 }
 
 .services-element:hover {
@@ -150,6 +149,12 @@ h3 {
 
 .skill-technologies {
     position: relative;
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 
     min-height: 70vh;
     height: fit-content;
@@ -221,4 +226,62 @@ h3 {
     padding-top: 3%;
     padding-left: 5%;
     font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+    .skillDiv {
+        width: 92vw;
+    }
+
+    .skill-title {
+        font-size: x-large;
+    }
+    
+    .skill-title2 > h3, .skill-title3 > h3 {
+        font-size: large;
+    }
+
+    .skill-services {
+        max-height: fit-content;
+        height: 80vh;
+        width: 85vw;
+        overflow: hidden;
+    }
+
+    .services-container {
+        height: 70%;
+        gap: 10% 8%;
+    }
+
+    .services-element {
+        height: 90%;
+        width: 100%;
+        box-shadow: 0px 0px 8px 0px white;
+    }
+
+    .services-title {
+        font-size: small;
+    }
+
+    .skill-img {
+        height: 100%;
+        width: 20%;
+    }
+
+    .skill-title2 {
+        padding: 0;
+        top: 0;
+        height: 10%;
+    }
+
+    .skill-technologies {
+        width: 85vw;
+    }
+
+    .technologies-element {
+        width: 60%;
+        box-shadow: 0 0 10px 2px rgb(61, 61, 61);
+        margin: 10%;
+    }
+
 }

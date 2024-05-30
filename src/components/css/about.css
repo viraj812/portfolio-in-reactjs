@@ -133,3 +133,39 @@
 .about2-content::-webkit-scrollbar-thumb:hover {
   background-color: rgb(19, 1, 53);
 }
+
+@media screen and (max-width: 480px) {
+
+  .aboutDiv {
+    height: fit-content;
+  }
+
+  .about-content {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .about1 {
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about1-img {
+    height: 300px;
+    width: 50%;
+    margin-top: 2%;
+
+    align-self: center;
+  }
+
+  .about1-content {
+    font-size: medium;
+  }
+
+  .about2 {
+    height: 50vh;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+}

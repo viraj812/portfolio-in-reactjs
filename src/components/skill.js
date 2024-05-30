@@ -17,9 +17,6 @@ const ServicesElement = (props) => {
                 {props.skill}
             </div>
 
-            <div className='skill-content'>
-                {props.content}
-            </div>
         </div>
 
     )
