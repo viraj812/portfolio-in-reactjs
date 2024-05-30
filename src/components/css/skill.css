@@ -228,7 +228,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
     .skillDiv {
-        width: 92vw;
+        width: 100vw;
     }
 
     .skill-title {
