@@ -169,7 +169,9 @@ img {
   }
 
   .role {
+    text-align: center;
     width: 50vw;
+    margin-top: 2%;
   }
 
   .img-container {
@@ -182,7 +184,7 @@ img {
   .learnMore-btn {
     width: fit-content;
     height: fit-content;
-    padding: 0;
+    /* padding: 0; */
 
     margin-bottom: 15%;
     font-size: small;
