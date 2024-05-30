@@ -132,7 +132,7 @@ nav {
 @media screen and (max-width: 480px) {
   .titleDiv {
     width: 15vw;
-    font-size: medium;
+    font-size: large;
   }
   .navButtons {
     width: 85vw;
@@ -140,7 +140,7 @@ nav {
   }
   .nav-item {
     width: 10%;
-    font-size: xx-small;
+    font-size: small;
     margin-right: 2%;
   }
 }
