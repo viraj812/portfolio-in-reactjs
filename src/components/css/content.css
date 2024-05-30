@@ -20,17 +20,19 @@
 
 .contentBox {
   display: flex;
-  position: absolute;
+  position: relative;
   flex-direction: column;
+  flex: 1 1 auto;
   left: 55%;
-  top: 16%;
+  /* top: 12%; */
 
   z-index: 10;
 
   height: fit-content;
   width: fit-content;
-  min-width: 30%;
+  /* min-width: 30%; */
   max-width: 45%;
+  max-height: 78vh;
 }
 
 h2 {
@@ -39,7 +41,7 @@ h2 {
 }
 
 .img-container {
-  position: relative;
+  position: absolute;
   background-color: rgb(26, 0, 111);
 
 
@@ -108,7 +110,7 @@ img {
 
 .learnMore-btn {
   width: fit-content;
-  height: 10%;
+  height: fit-content;
 
   padding: 10px;
 
