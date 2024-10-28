@@ -3,6 +3,8 @@
   height: 90vh;
 
   background-color: rgba(7, 7, 7);
+
+  margin-top: 20vh;
 }
 
 .about-title {
@@ -10,15 +12,14 @@
   position: relative;
   width: 100%;
   height: 15%;
-  /* margin-left: 5%; */
 
   justify-content: center;
   align-items: center;
 
   color: white;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
-  border-bottom: 1px solid rgb(65, 65, 65);
+  /* border-bottom: 1px solid rgb(65, 65, 65); */
 }
 
 .about-content {
@@ -26,8 +27,6 @@
   position: relative;
   width: 100%;
   height: 85%;
-
-  /* overflow-y: auto; */
 }
 
 .about1 {
@@ -37,28 +36,25 @@
   margin-left: 2%;
   width: 50%;
   height: 100%;
-  border-right: 1px solid rgb(82, 82, 82);
-
-  /* overflow-y: scroll; */
+  /* border-right: 1px solid rgb(82, 82, 82); */
 }
 
 .about1-img {
   position: relative;
   display: flex;
   width: 30%;
-  height: 100%;
+  height: 90%;
   justify-content: center;
-  align-items: center;
+  align-items: center;makeover
 }
 
 .about1-img>img {
-
-  position: relative;
+  display: block;
+  position: absolute;
   height: 70%;
   width: 100%;
   background-color: transparent;
   border-radius: 10px;
-  
 }
 
 .about1-content {
@@ -73,11 +69,11 @@
   padding-left: 5%;
   justify-content: center;
 
-  font-size: larger;
+  /* font-size: larger; */
+  font-size: 20px;
   font-weight: 500;
 
   color: wheat;
-
 }
 
 .info {
@@ -102,10 +98,14 @@
 }
 
 .about2-content {
+  display: flex;
   margin: 10%;
   width: 90%;
   height: 85%;
+  align-items: start;
+  font-size: larger;
   overflow-y: auto;
+  /* border: 2px solid yellow; */
 }
 
 .about2-content :hover {

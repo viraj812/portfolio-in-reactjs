@@ -4,8 +4,8 @@
 
     height: 70vh;
     width: 98vw;
-
-    background-color: rgba(1, 1, 1, 0.5);
+    margin-top: 20vh;
+    border-top: 1px solid gray;
 }
 
 .contact-title {
@@ -20,15 +20,15 @@
     font-size: larger;
     font-weight: 600;
     letter-spacing: 3px;
-    /* border: 2px solid green; */
 }
 
-.contact1>.contact-title {
-    /* border-bottom: 1px solid gray; */
+.contact1> .contact-title {
+
 }
 
 .contact2>.contact-title {
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 
@@ -111,7 +111,7 @@ footer {
     margin-bottom: 1vh;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
     .contactDiv {
         flex-direction: column;
         height: fit-content;

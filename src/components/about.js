@@ -1,4 +1,4 @@
-import profile_pic from "../about-pic.jpg"
+import profile_pic from "../about-pic.png"
 
 const AboutPage = (props) => {
     return (
@@ -13,37 +13,16 @@ const AboutPage = (props) => {
                         <img src={profile_pic} />
                     </div>
                     <div className='about1-content'>
-                        <p><span className='info'>Name :-</span><br />Viraj Desai</p>
-                        <span className='info'>Qualification :-</span>BTech Computer Science Engineering
-                        <p><span className='info'>Experience :-</span><br />Fresher</p>
-                        <span className='info'>Interest :-</span>Artificial Intelligence, Data Science, Full Stack Development
-                        <p><span className='info'>Location :-</span><br /> Ahmedabad, Gujarat, India</p>
+                        <p><span className='info'>Name: </span>Viraj Desai</p>
+                        <p><span className='info'>Qualification: </span>BTech CSE</p>
+                        <p><span className='info'>Experience: </span>Fresher</p>
+                        <p><span className='info'>Location: </span>Ahmedabad, Gujarat, India</p>
                     </div>
                 </div>
 
                 <div className='about2'>
                     <div className='about2-content'>
-                        I'm Viraj Desai, an enthusiastic Computer Science Engineering student with a strong inclination towards utilizing technology for addressing real-world challenges. Presently enrolled in my Bachelor's program at Pandit Deendayal Energy University, Gandhinagar, I am captivated by the constantly evolving realm of computer science.
-                        <br /><br />
-                        Educational Background :-
-                        <br />
-                        My academic journey has endowed me with a robust grasp of fundamental computer science principles, encompassing algorithms, data structures, programming languages, and software engineering tenets. I have consistently pursued academic excellence, maintaining a commendable GPA while actively participating in extracurricular pursuits that complement my studies.
-
-                        <br /><br />
-                        Technical Proficiency :-
-                        <br />
-                        <ul>
-                            <li>Proficiency in programming languages such as Python, JavaScript, Kotlin, Java, C and C++.</li>
-                            <br />
-                            <li>Hands-on experience in crafting full stack web applications using HTML, CSS, and frameworks such as ReactJS, NodeJS, Flask, Django.<br /></li>
-                            <br />
-                            <li>Strong fundamentals and practical knowledge, skills in machine learning and artificial intelligence, demonstrated through practical implementation of algorithms and models.</li>
-                            <br />
-                            <li>Proficient in managing database systems including MySQL, MongoDB, and PostgreSQL.</li>
-                            <br />
-                            <li>Practical expertise in cloud services such as AWS and application deployment and management.</li>
-
-                        </ul>
+                    I'm Viraj Desai, a Computer Science Engineering student at Pandit Deendayal Energy University with a passion for leveraging technology to solve real-world challenges. I have a solid foundation in algorithms, data structures, and software engineering, complemented by hands-on experience in full stack development, machine learning, and AI. Skilled in Python, and JavaScript, I also have practical expertise with cloud services (AWS), database systems (MySQL, MongoDB), and frameworks like ReactJS, NodeJS, and Django. My academic journey reflects both strong technical skills and a commitment to innovation.
                     </div>
                 </div>
             </div>

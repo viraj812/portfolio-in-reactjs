@@ -7,7 +7,7 @@
 
   align-items: center;
 
-  margin-top: 7vh;
+  margin-top: 10vh;
 
   background-color: black;
   color: aliceblue;
@@ -30,7 +30,7 @@
 
   height: fit-content;
   width: fit-content;
-  /* min-width: 30%; */
+  
   max-width: 45%;
   max-height: 78vh;
 }
